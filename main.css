@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+nav {
+    padding: 0px 20px;
+    min-height: 80px;
+    background: #1e1e1e;
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+nav > a {
+    vertical-align: bottom;
+}
+
+nav img {
+    max-height: 48px;
+    background-color : white;
+
+}
+
+nav ul,
+nav ul li{
+    display: inline-flex;
+    gap:30px;
+    margin-left: auto;
+}
+
+
+
+
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #4a82c3;;
+}
+
+nav ul li a:hover {
+    color: rgb(229, 145, 0);
+}
+
+nav ul li a:active {
+    color: rgb(92, 229, 0);
+}
+
+#current-page {
+    color: rgb(0, 184, 18);
+}
+
+.main-header {
+    background-color: #ffffff;
+    padding: 20px;
+    align-items: center;
+    width:65%;
+    height: 500px;
+    margin:auto;
+    justify-content: space-between;
+    float:left;
+}
+
+
+
+
+
+.article-picture-right {
+    float: right;
+}
+
+.article-picture-left {
+    float: left;
+}
+
+.img-adjust img {
+    margin: 16px;
+    border: solid 3px #333;
+    width : 380px;
+    height : 280px;
+}
+
+
+
+
+/* flex box */
+.flexbox {
+    display: flex;
+    justify-content: space-evenly; /* 아이템 간의 균등한 간격 */
+    flex-direction: row;
+    align-items: center;
+    /* gap: 30px; */
+}
+
+.flexbox img {
+    border: solid 3px #333;
+    width: 100%;
+    height: 280px;
+}
+
+
+.flex_textbox {
+    border: solid 1px red;
+    width: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+}
+
+.wrapper main {
+    flex: 1;
+}
+
+
+
+
+
+.textbox {
+    /* clear: right; */
+    margin: 16px;
+    border: solid 1px red;
+    padding: 16px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.textbox-with-clear {
+    clear:both;
+    margin: 16px;
+    border: solid 1px red;
+    padding: 16px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.post-title {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.post-info {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.post-info-right {
+    margin-bottom: 16px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.post-paragraph {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.last-paragraph {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Content 영역 */
+.content {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #ffeded;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px #333;
+}
+
+.side-item{
+    background-color: #ffe0e0;
+    border: solid 1px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gallery (Main Content) */
+.main-gallery {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+    border: solid 1px #333;
+    padding: 10px;
+}
+
+.gallery-item{
+    width: calc(25% - 20px);
+}
+
+.gallery-item img{
+    width: 130px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #333;
+    
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+.main-footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+    clear:both;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.main-footer ul li {
+    margin: 0 10px;
+    display: inline-flex;
+}
+
+.main-footer ul li a {
+    color: #4a82c3;
+}
+
+.main-footer p {
+    font-size: 14px;
+}
+
+.main-footer .footer-line {
+    width:70%;
+    border: none;
+    border-top: 1px solid #fff;
+}

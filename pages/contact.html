@@ -1,0 +1,92 @@
+<!--about.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Basic Nav Example</title>
+</head>
+<body>
+    <nav>
+        <a href="#">
+            <picture>
+                <!-- SVG version for all scenarios due to scalability and efficiency -->
+                <source srcset="../assets/logo/image.png" type="image/svg+xml" />
+                <!-- High resolution PNG for large screasens -->
+                <source srcset="../assets/logo/image.png" media="(min-width: 1024px)" type="image/png" />
+                <!-- Small PNG for medium screens -->
+                <source srcset="../assets/logo/image.png" media="(min-width: 768px)" type="image/png" />
+                <!-- High resolution JPG for small screens (lower priority than PNG) -->
+                <source srcset="../assets/logo/image.png" media="(min-width: 480px)" type="image/jpg" />
+                <!-- Fallback small JPG for all other scenarios or if none of the above are supported -->
+                <img src="../assets/logo/image.png" alt="ECO company logo">
+            </picture>
+        </a>
+        <span class="spacer"></span>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+            <li id="last-item"><a href="/pages/contact.html" id="current-page">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+
+    <div class="wrapper">
+        <div class="content">
+            <aside class="sidebar">
+                <!-- Sidebar content -->
+                <div class="side-item"><a href>CEO</a></div>
+                <div class="side-item"><a href>Supporter</a></div>
+                <div class="side-item"><a href>Reporter</a></div>
+                <div class="side-item"><a href>Actors</a></div>
+                <div class="side-item"><a href>Writer</a></div>
+            </aside>
+    
+            <main class="main-gallery">
+                <!-- Gallery items -->
+                <div class="gallery-item">
+                    <img src="../pictures/Harry Potter.webp">
+                </div>
+                <div class="gallery-item">
+                    <img src="../pictures/Ron_weasley.webp">
+                </div>
+                <div class="gallery-item">
+                    <img src="../pictures/Hermione_Jean_Granger.webp">
+                </div>
+                <div class="gallery-item">
+                    <img src="../pictures/Draco_Malfoy.webp">
+                </div>
+                <div class="gallery-item">
+                    <img src="../pictures/Albus_Dumbledore.webp">
+                </div>
+                <div class="gallery-item">
+                    <img src="../pictures/Severus_Snape.webp">
+                </div>
+                <div class="gallery-item">
+                    <img src="../pictures/Rubeus_Hagrid.webp">
+                </div>
+            </main>
+        </div>
+        </div>
+
+
+
+
+
+
+    <footer class="main-footer">
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+        <hr class="footer-line">
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</div>
+</body>
+</html>
